@@ -40,3 +40,26 @@ export default App;
       <p>Confira a ordem de execução no console.</p>
     </div>
   );
+
+
+  //ex3
+
+  console.log("A");
+
+  setTimeout(() => console.log("B"), 0);
+
+  Promise.resolve()
+    .then(() => console.log("C"))
+    .then(() => console.log("D"));
+
+  console.log("E");
+
+  return (
+    <div>
+      <h1>Exercício 3 - Event Loop</h1>
+      <p>Confira a ordem de execução no console.</p>
+    </div>
+  );
+
+
+
